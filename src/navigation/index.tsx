@@ -5,23 +5,11 @@ import {
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home } from "./screens/Home";
 
-const HomeTabs = createNativeStackNavigator({
+const RootStack = createNativeStackNavigator({
   screens: {
     Home: {
       screen: Home,
       options: {
-        title: "Feed",
-      },
-    },
-  },
-});
-
-const RootStack = createNativeStackNavigator({
-  screens: {
-    HomeTabs: {
-      screen: HomeTabs,
-      options: {
-        title: "Home",
         headerShown: false,
       },
     },
